@@ -1,29 +1,24 @@
-// import { Products } from "../pages/admin";
-// import {Users, Dashboard} from "../pages/admin/users/";
-import { RoutesI } from "./routesUsers";
-
-
-
+import { Category, DashBoard } from '@/pages';
+import { RoutesI } from '@/routes';
 
 export const routesAdmin: RoutesI[] = [
-    // {
-    //     path: '',
-    //     to: '',
-    //     Component: Dashboard,
-    //     name: 'DashBoard',
-    //     index: true
-    // },
-    // {
-    //     path: 'users',
-    //     to: 'users',
-    //     Component: Users,
-    //     name: 'Users',
-    // },
-    // {
-    //     path: 'products',
-    //     to: 'products',
-    //     Component: Products,
-    //     name: 'products',
-    // }
-
-]
+  {
+    path: '',
+    to: '',
+    Component: DashBoard,
+    name: 'DashBoard',
+    index: true,
+  },
+  {
+    path: 'category',
+    to: 'category',
+    Component: Category,
+    name: 'Category',
+  },
+  // {
+  //     path: 'products',
+  //     to: 'products',
+  //     Component: Products,
+  //     name: 'products',
+  // }
+];

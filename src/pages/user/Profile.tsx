@@ -1,19 +1,18 @@
-import {useEffect} from 'react'
-import { Box } from "@mui/material"
-import { ProfileForm } from "../../components"
-import { useAppDispatch } from '../../hooks'
-import { getProfileUser } from '../../store/slices/user/thunk'
-
+import { Box } from '@mui/material';
+import { ModalMap, ProfileContainer, ProfileForm } from '@/components';
+import { CenterColumn } from '@/styles';
 
 const Profile = () => {
-    const dispatch = useAppDispatch();
+  return (
+    <Box>
+      <ModalMap />
+      <CenterColumn>
+        <ProfileContainer>
+          <ProfileForm />
+        </ProfileContainer>
+      </CenterColumn>
+    </Box>
+  );
+};
 
-
-    return (
-        <Box>
-            <ProfileForm/>
-        </Box>
-    )
-}
-
-export default Profile
+export default Profile;
